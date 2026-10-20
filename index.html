@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EntreNós: una nueva forma de conocer personas, hacer amistades y compartir experiencias en España.">
+  <title>EntreNós — Nuevas personas, nuevas historias</title>
+  <style>
+    :root {
+      --purple: #6845a5;
+      --pink: #f4a7bd;
+      --ink: #29253a;
+      --muted: #6c6878;
+      --cream: #fffaf7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      background: white;
+    }
+
+    .logo {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: #e879a0;
+    }
+
+    .nav-link {
+      color: var(--purple);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .hero {
+      padding: 75px 7% 85px;
+      text-align: center;
+      background: linear-gradient(135deg, #f9e8f0, #eee8fb, #fff8ef);
+    }
+
+    .heart {
+      font-size: 3.2rem;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      max-width: 800px;
+      margin: 0 auto 18px;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      line-height: 1.12;
+      letter-spacing: -1.5px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 28px;
+      font-size: 1.12rem;
+      color: var(--muted);
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--purple);
+      color: white;
+      text-decoration: none;
+      padding: 13px 24px;
+      border-radius: 30px;
+      font-weight: 700;
+    }
+
+    section {
+      padding: 58px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin: 0 0 12px;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 32px;
+      color: var(--muted);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      border: 1px solid #eee7f3;
+    }
+
+    .card .emoji {
+      font-size: 2rem;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .how {
+      background: #f2edf9;
+      text-align: center;
+    }
+
+    .steps {
+      max-width: 800px;
+      margin: 28px auto 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 22px;
+    }
+
+    .step-number {
+      display: inline-grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--purple);
+      color: white;
+      font-weight: bold;
+    }
+
+    .validation {
+      text-align: center;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .validation-box {
+      background: white;
+      border: 1px solid #eee7f3;
+      padding: 28px;
+      border-radius: 18px;
+    }
+
+    footer {
+      background: #29253a;
+      color: white;
+      text-align: center;
+      padding: 28px 7%;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      margin: 5px;
+    }
+
+    @media (max-width: 500px) {
+      header {
+        padding: 16px 5%;
+      }
+
+      .hero {
+        padding: 55px 6%;
+      }
+
+      section {
+        padding: 42px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="#">Entre<span>❤️</span>Nós</a>
+    <a class="nav-link" href="#idea">Nuestra idea</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="heart">💜</div>
+      <h1>Un nuevo «hola» puede cambiar tu día.</h1>
+      <p>
+        Conoce personas, encuentra nuevas amistades y comparte
+        pequeños momentos. A veces, todo empieza con una conversación.
+      </p>
+      <a class="button" href="#idea">Descubre EntreNós</a>
+    </section>
+
+    <section id="idea">
+      <h2 class="section-title">Conectar de una forma más humana</h2>
+      <p class="intro">
+        EntreNós nace con una idea sencilla: hacer más fácil conocer
+        personas con las que compartir tiempo, intereses y experiencias.
+        Queremos escuchar a las personas antes de construir la plataforma.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">💬</div>
+          <h3>Conversaciones</h3>
+          <p>Conoce a alguien nuevo y encuentra con quién hablar de tu día.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">☕</div>
+          <h3>Planes cotidianos</h3>
+          <p>Comparte un café, un paseo, una película o practica un idioma.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">🌍</div>
+          <h3>Nuevas experiencias</h3>
+          <p>Conecta con personas que comparten tus intereses y ganas de descubrir.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="how">
+      <h2 class="section-title">La idea es sencilla</h2>
+      <p class="intro">
+        Estamos preparando una propuesta que ponga la amistad y la confianza
+        en el centro.
+      </p>
+
+      <div class="steps">
+        <div>
+          <span class="step-number">1</span>
+          <h3>Cuéntanos qué necesitas</h3>
+          <p>Queremos conocer las dificultades reales para hacer nuevas amistades.</p>
+        </div>
+
+        <div>
+          <span class="step-number">2</span>
+          <h3>Ayúdanos a mejorar</h3>
+          <p>Tus opiniones nos ayudarán a decidir qué funciones son importantes.</p>
+        </div>
+
+        <div>
+          <span class="step-number">3</span>
+          <h3>Creemos algo útil</h3>
+          <p>Construiremos la propuesta a partir de las necesidades de las personas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="validation">
+        <h2 class="section-title">Tu opinión importa</h2>
+
+        <div class="validation-box">
+          <p>
+            EntreNós está en una fase inicial de validación.
+            Todavía no es una aplicación disponible y estamos preparando
+            una breve encuesta para conocer el interés de las personas.
+          </p>
+
+          <p><strong>Nuevas personas. Nuevas historias.</strong></p>
+          <p>Gracias por ayudarnos a dar el primer paso.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>EntreNós</strong> — Nuevas personas, nuevas historias.</p>
+    <p>Proyecto en fase de validación · España</p>
+  </footer>
+</body>
+</html>
